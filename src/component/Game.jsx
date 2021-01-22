@@ -2,6 +2,7 @@
 
 import React, {useState} from 'react';
 import Board from './Board'
+import Square from './Square'
 import calculateWinner from '../CalculateWinner'
 
 export default function Game(){
@@ -20,7 +21,7 @@ export default function Game(){
        <button onClick = {()=>setBoard(Array(9).fill(null))} >Reset</button>
    )
    
-   const baseButtonContent = winner ? `Winner: ${winner}`: `Next Player: ${xIsNext?'X':'O'}` 
+   const baseButtonContent = winner ? `We have a winer: ${winner}`: `Next Player: ${xIsNext?'X':'O'}` 
  
    
        
